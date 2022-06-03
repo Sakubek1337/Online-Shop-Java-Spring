@@ -16,8 +16,9 @@ Spring dependencies: <br>
 - Lombok
 - Java Mail Sender
 
-Screenshots: <br>
+Screenshots and Database ERM diagram: <br>
 
+![](https://github.com/Sakubek1337/Spring-Finals/blob/main/screenshots/diagram.PNG) <br>
 ![](https://github.com/Sakubek1337/Spring-Finals/blob/main/screenshots/screen0.PNG) <br>
 ![](https://github.com/Sakubek1337/Spring-Finals/blob/main/screenshots/screen00.PNG) <br>
 ![](https://github.com/Sakubek1337/Spring-Finals/blob/main/screenshots/screen1.PNG) <br>
