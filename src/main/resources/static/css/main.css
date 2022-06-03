@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+#top {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.type {
+    background: #292546;
+    border-radius: 15px;
+    border: 1px solid white;
+    width: 1000px;
+    text-align: center;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 30px;
+}
+
+.btnform {
+    width: 1000px;
+    align-content: center;
+    align-items: center;
+}
+
+.label {
+    text-decoration: underline;
+    color: #ffffff;
+    font-family: 'Jost', sans-serif;
+}
+
+.description {
+    background: #0f0c29;
+    border-color: white;
+    font-size: 24px;
+    color: white;
+    height: 400px;
+    padding: 10px 10px 10px 10px;
+    background-position: top;
+    margin-bottom: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+form button{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #573b8a;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form button:hover{
+    color: #573b8a;
+    background: white;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}

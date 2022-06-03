@@ -2,16 +2,37 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>New Record</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous">
+    <title>ORDER</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/order.css}">
 </head>
 <body>
-<div class="container">
-
+<div class="container" th:object="${last_order}">
+    <div th:if="${last_order.isSent == false}">
+        <form th:action="@{/sendOrder}" th:object="${new_order}" method="post" id="frm">
+            <div class="centered">
+                <label for="email">Email address:</label>
+                <input th:field="*{email}" type="email" name="email" placeholder="Email address" required="" id="email">
+            </div>
+            <div class="centered">
+                <label for="types">Choose a quote type:</label>
+                <select id="types" th:field="*{type}">
+                    <option th:value="life" th:text="Life"></option>
+                    <option th:value="love" th:text="Love"></option>
+                    <option th:value="inspirational" th:text="Inspirational"></option>
+                    <option th:value="humor" th:text="Humor"></option>
+                    <option th:value="wisdom" th:text="Wisdom"></option>
+                    <option th:value="happiness" th:text="Happiness"></option>
+                </select>
+            </div>
+            <button type="submit">ORDER</button>
+        </form>
+    </div>
+    <div th:if="${last_order.isSent == true}">
+        <div class="alert alert-success">
+            ORDER WAS DELIVERED SUCCESSFULLY!
+        </div>
+        <a th:href="@{/main}">Back to main page</a>
+    </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" th:src="@{/js/adding-form.js}"></script>
 </body>
 </html>

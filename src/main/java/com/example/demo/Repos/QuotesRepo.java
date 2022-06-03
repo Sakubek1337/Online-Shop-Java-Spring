@@ -1,6 +1,6 @@
 package com.example.demo.Repos;
 
-import com.example.demo.Entities.Quote;
+import com.example.demo.Models.Entities.Quote;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
